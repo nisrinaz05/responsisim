@@ -1,0 +1,232 @@
+body {
+  font-family: "Lora", serif;
+  background: linear-gradient(45deg, #ffcad4, #eaf6ff, #fff5ba);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 10s ease infinite;
+  color: #4b4b4b; /* Neutral Gray for readability */
+  margin-top: 70px;
+  line-height: 1.8;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffb6c1; /* Soft Pink */
+}
+
+a {
+  color: #ffb6c1; /* Soft Pink */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8d7da; /* Muted Soft Pink */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b0e0e6 !important; /* Soft Powder Blue */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  border: 2px solid #ffb6c1; /* Soft Pink */
+  border-radius: 50%;
+}
+
+.nav-link {
+  color: #6a5acd !important; /* Soft Slate Blue */
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.nav-link.active {
+  color: #f8d7da !important; /* Muted Soft Pink */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, #f8d7da, #b0e0e6); /* Pink to Soft Blue */
+  padding-top: 14rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  color: #6a5acd; /* Soft Slate Blue */
+  text-shadow: 2px 2px #f8d7da; /* Soft Pink */
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  color: #7f7f7f; /* Medium Gray */
+}
+
+/* About Section */
+#About {
+  background-color: #ffb6c1; /* Soft Pink */
+  padding: 5rem;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 100px auto; /* Center horizontally on the page */
+  max-width: 80%; /* Restrict width for better layout */
+  text-align: center; /* Center-align text */
+}
+
+#About h2 {
+  color: #6a5acd; /* Soft Slate Blue */
+  text-decoration: underline;
+}
+
+#About p {
+  color: #7f7f7f; /* Medium Gray */
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Menu Section */
+#Menu {
+  margin-top: 70px;
+  padding-top: 10px;
+  background-color: #f0f8ff; /* Soft Light Blue */
+  padding: 5rem;
+  border-radius: 60px;
+  text-align: center;
+}
+
+#Menu h1 {
+  color: #6a5acd; /* Soft Slate Blue */
+  font-weight: bold;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid #e0e0e0; /* Light Gray */
+  border-radius: 10px;
+  background-color: #b0e0e6; /* Soft Powder Blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #ffb6c1; /* Soft Pink */
+  font-weight: bold;
+}
+
+.card-text {
+  color: #7f7f7f; /* Medium Gray */
+}
+
+/* Orders Section */
+#Orders {
+  margin-top: 70px;
+  background-color: #ffb6c1; /* Soft Pink */
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+form {
+  background-color: #f0f8ff; /* Soft Light Blue */
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Light Gray */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #6a5acd; /* Soft Slate Blue */
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0; /* Light Gray */
+  border-radius: 5px;
+}
+
+form .btn-primary {
+  background-color: #ff6b85; /* Vibrant Pink */
+  border: none;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+form .btn-primary:hover {
+  background-color: #ff5272; /* Darker Pink */
+  transform: translateY(-3px); /* Lift button on hover */
+}
+
+form .btn-primary:active {
+  background-color: #ff395c; /* Even darker Pink */
+  transform: scale(0.95); /* Shrink slightly on click */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Add shadow when pressed */
+}
+
+/* Footer */
+footer {
+  background-color: #b0e0e6; /* Soft Powder Blue */
+  padding: 20px;
+  color: #6a5acd; /* Soft Slate Blue */
+  text-align: center;
+}
+
+footer a {
+  color: #ffb6c1; /* Soft Pink */
+}
+
+footer a:hover {
+  color: #f8d7da; /* Muted Soft Pink */
+}
